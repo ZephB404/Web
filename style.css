@@ -1,0 +1,26 @@
+body {
+	font-family: "normal_font";
+	background: url("corner_left.png") top left no-repeat, 
+	url("corner_right.png") top right no-repeat, 
+	url("gray.jpg");
+}
+
+.title {
+	text-align: center; 
+	color: purple;
+	text-shadow: 2px 2px 0px black;
+}
+
+.center {
+	text-align: center;
+}
+
+img {
+	border: 8px purple dashed;
+	box-shadow: 4px 4px 0px black;
+}
+
+p, .dotted {
+	background-color: rgba(217, 217, 217, 0.3);
+	border: 4px purple dotted;
+}
