@@ -1,26 +1,54 @@
-body {
-	font-family: "normal_font";
-	background: url("corner_left.png") top left no-repeat, 
-	url("corner_right.png") top right no-repeat, 
-	url("gray.jpg");
+
+#page {
+	border: black 2px solid;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
 }
 
-.title {
-	text-align: center; 
-	color: purple;
-	text-shadow: 2px 2px 0px black;
+header {
+	order: 1;
+	background-color: rgba(102, 161, 255, 0.7);
+	width: 100%;
+	height: 10vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.center {
-	text-align: center;
+nav {
+	flex: 1;
+	order: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding-left: 25px;
+	justify-content: space-around;
+	background-color: rgba(235, 255, 102, 0.6);
+
 }
 
-img {
-	border: 8px purple dashed;
-	box-shadow: 4px 4px 0px black;
+.content {
+	flex: 7;
+	order: 3;
+	padding-left: 20px;
+	height: 80vh;
+	background-color: rgba(255, 171, 102, 0.7);
+	overflow: auto;
+}
+p {
+	width: 75%;
+	text-align: justify;
+	font-size: 2em;
 }
 
-p, .dotted {
-	background-color: rgba(217, 217, 217, 0.3);
-	border: 4px purple dotted;
+
+footer {
+	order:4;
+	align-items: center;
+	background-color: gray;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 5vh;
 }
