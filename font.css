@@ -1,0 +1,11 @@
+@font-face {
+	font-family: "titre_font";
+	src: url("fonts/titre.woff") format("woff");
+}
+
+@font-face {
+	font-family: "paragraphe_font";
+	src: url("fonts/paragraphe.woff") format("woff");
+}
+
+/*
