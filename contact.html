@@ -6,6 +6,31 @@
         <title>Blog de Zéphyr</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="font.css">
+        <style>
+            fieldset {
+                width: 65%;
+            }
+            section {
+                overflow-y: hidden;
+            }
+            #social_media {
+                margin: 20px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                height: 50px;
+            }
+            
+            .icon {
+                display: block;
+                max-height: 35%;
+                max-width: 35%;
+                margin: 15px;
+            }
+            textarea {
+                resize: none;
+            }
+        </style>
 
     </head>
 
@@ -47,6 +72,23 @@
                         <input type="submit" name="envoyer">
                     </fieldset>
                 </form>
+                <div id="social_media">
+                    <div>
+                        <a href="https://www.facebook.com/people/Zéphyr-Bielinski/100011818264176">
+                            <img src="images/facebook.png" class="icon">
+                         </a>
+                    </div>
+                    <div>
+                        <a href="https://www.instagram.com/zeph_le_zeph/">
+                            <img src="images/instagram.png" class="icon">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.youtube.com/channel/UCMcxtVQ3fSGNyOJ2wz1eR1w">
+                            <img src="images/youtube.png" class="icon">
+                        </a>
+                    </div>
+                </div>
     		</section>
 
     		<aside>
