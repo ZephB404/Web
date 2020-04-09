@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+    	<!-- Information sur le site -->
+        <meta charset="utf-8" />
+        <title>Blog de Zéphyr</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="font.css">
+
+    </head>
+
+    <body>
+    	<!-- Tout ce que le site affiche -->
+    	<div id="page">
+    		<header>
+	    		<div id="titre">
+	    			<h1> Le blog de Zéphyr</h1>
+	    			<img src="images/logo_mini.png" alt="Haut-parleur" />
+	    		</div>
+	    		<nav>
+	    			<a href="index.html">Accueil</a>
+	    			|
+	    			<a href="blog.html">Blog</a>
+                    |   
+                    <a href="contact.html">Contact</a>  
+                    |
+                    <a href="autres.html">Autres créations</a>	
+	    		</nav>
+    		</header>
+
+    		<section>
+    			<h1>Contactez moi!</h1>
+    			<p>Adresse courriel: <a href="mailto:zephyr.bielinski@gmail.com">zephyr.bielinski@gmail.com</a></p>
+                
+                <form method="post" action="netlify">
+                    <fieldset>
+                        <legend> Me contacter directement</legend>
+                        <p>
+                            <input type="email" name="mail_envoyeur" id="mail_envoyeur" required>
+                            <label for="mail_envoyeur">Votre courriel</label>
+                            <br />
+                            <input type="text" name="objet" id="objet">
+                            <label for="objet">Objet</label>
+                            <br />
+                            <textarea rows="10" cols="80"></textarea>
+                        </p>
+                    </fieldset>
+                </form>
+    		</section>
+
+    		<aside>
+    			<h3>À propos de moi</h3>
+    			<figure id="moi_figure">
+    				<img src="images/avatar_mini.jpg" id="image_moi">
+    				<div id="bouton_propos"><a href="#" id="contact_text">Contact</a></div>
+    			</figure>
+    				<p>Qui suis-je? Question terrorisante pour certains ou gratifiante pour d'autres je tenterai d'y répondre ici à ma manière. Je suis un jeune québécois qui essaye jour après de jour de regarder le monde qui l'entoure d'un oeil critique. Je ne me satisfait jamais de réponses faciles ou bien trop évidentes et je dois avouer mon faible pour les pensées qui dérangent. Je n'aime pas que ma parole soit trop convenu et qu'elle s'explique simplement par son contexte. J'essaye de lui apporter une valeur supplémentaire! Alors oui, j'ai seulement 16 ans et cet âge m'apporte le grand incovénient de manquer d'expérience et de vécu, mais je crois que cette jeunesse qui m'habite peut aussi m'apporter un regard nouveau. C'est en ce sens que j'espère ce blog pertinent. À la revoyure! </p>
+    		</aside>
+
+    		<footer>
+    		<p> Dernière actualité de Zéphyr Bielinski: <a href="#">Extinction Rebellion, fiable?</a> </p>
+    		</footer>
+    	</div>
+
+    </body>
+</html>

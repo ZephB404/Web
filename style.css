@@ -95,13 +95,15 @@ footer {
 }
 
 #moi_figure {
-	height: 250px;
-	width: 250px;
+	height: 200px;
+	width: 200px;
 	position: relative;
 }
 
 #image_moi {
-
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
 }
 
 #bouton_propos {
@@ -120,4 +122,16 @@ footer {
 
 #bouton_propos:hover {
 	background-color: rgba(200, 200, 200, 0.9);
+}
+
+aside p {
+	font-size:1em;
+}
+
+#contact_text {
+	font-size: 0.9em;
+}
+
+input, textarea {
+	margin: 5px;
 }
