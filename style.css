@@ -34,6 +34,10 @@ a {
 	font-weight: bold;
 	text-decoration: none;
 }
+
+a:hover {
+	text-decoration: underline;
+}
 header {
 	border-bottom: 4px black solid;
 	grid-area: header;
@@ -91,23 +95,22 @@ footer {
 }
 
 #moi_figure {
-	display: grid;
 	height: 250px;
 	width: 250px;
-	grid-template-rows: 25% 25% 25% 25%;
-	grid-template-columns: 25% 25% 25% 25%;
+	position: relative;
 }
 
 #image_moi {
-	grid-row: 1/4;
-	grid-column: 1/4;
+
 }
 
 #bouton_propos {
 	background-color: rgba(255, 255, 255, 0.9);
 	border: 4px black solid;
-	grid-row: 4/5;
-	grid-column: 3/5;
+	position: absolute;
+	bottom: 0px;
+	right: 10px;
+	padding: 5px;
 
 	display: flex;
 	justify-content: center;
