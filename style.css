@@ -10,7 +10,7 @@ body {
 
 	height: 100vh;
 	display: grid;
-	grid-template-rows: 18vh auto 6vh;
+	grid-template-rows: 18% auto 6vh;
 	grid-template-columns: auto 35%;
 
 	grid-template-areas: "header header"
@@ -39,11 +39,11 @@ a:hover {
 	text-decoration: underline;
 }
 header {
-	border-bottom: 4px black solid;
 	grid-area: header;
 	display: grid;
-	grid-template-rows: auto;
+	grid-template-rows: 18vh;
 	grid-template-columns: auto 35%;
+	border-top: 4px black solid;
 
 
 }
@@ -68,6 +68,7 @@ nav {
 
 
 section {
+	border-top: 4px black solid;
 	background-color: white;
 	grid-area: section;
 	overflow-y: scroll;
@@ -75,6 +76,7 @@ section {
 }
 
 aside {
+	border-top: 4px black solid;
 	background-color: rgb(235, 235, 235);
 	grid-area: aside;
 	border-left: 2px black dashed;
@@ -103,7 +105,6 @@ footer {
 #image_moi {
 	max-width: 100%;
 	max-height: 100%;
-	display: block;
 }
 
 #bouton_propos {
@@ -111,7 +112,7 @@ footer {
 	border: 4px black solid;
 	position: absolute;
 	bottom: 0px;
-	right: 10px;
+	right: 0px;
 	padding: 5px;
 
 	display: flex;
