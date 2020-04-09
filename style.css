@@ -10,7 +10,7 @@ body {
 
 	height: 100vh;
 	display: grid;
-	grid-template-rows: 120px auto 40px;
+	grid-template-rows: 18vh auto 6vh;
 	grid-template-columns: auto 35%;
 
 	grid-template-areas: "header header"
@@ -95,8 +95,8 @@ footer {
 }
 
 #moi_figure {
-	height: 200px;
-	width: 200px;
+	height: 25vh;
+	width: 25vh;
 	position: relative;
 }
 

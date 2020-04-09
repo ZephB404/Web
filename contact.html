@@ -7,26 +7,32 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="font.css">
         <style>
-            fieldset {
-                width: 65%;
-            }
             section {
-                overflow-y: hidden;
+                display: flex;
+                flex-wrap: wrap;
+                overflow-y: auto;
             }
             #social_media {
-                margin-top: 2.5%;
+                width: 100%;
                 display: flex;
-                justify-content: flex-start;
+                justify-content: space-around;
                 align-items: flex-start;
             }
             
             .icon {
                 max-height: 35%;
                 max-width: 35%;
-                margin-left: 15px;
             }
             textarea {
                 resize: none;
+            }
+
+            .titre_contact, .adresse {
+                width: 100%;
+            }
+            .formulaire {
+                width: 400px;
+                height: 92%; 
             }
         </style>
 
@@ -52,11 +58,11 @@
     		</header>
 
     		<section>
-    			<h1>Contactez moi!</h1>
-    			<p>Adresse courriel: <a href="mailto:zephyr.bielinski@gmail.com">zephyr.bielinski@gmail.com</a></p>
+    			<h1 class="titre_contact">Contactez moi!</h1>
+    			<p class="adresse">Adresse courriel: <a href="mailto:zephyr.bielinski@gmail.com">zephyr.bielinski@gmail.com</a></p>
                 
                 <form name="contact" netlify action="/succes.html">
-                    <fieldset>
+                    <fieldset class="formulaire">
                         <legend> Me contacter directement</legend>
                         <p>
                             <input type="email" name="mail_envoyeur" id="mail_envoyeur" required>
