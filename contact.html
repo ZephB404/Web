@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="font.css">
         <style>
             section {
-                overflow: hidden;
+                overflow-x: hidden;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
@@ -28,6 +28,12 @@
             .formulaire {
                 width: 0%;
                 margin:auto;
+            }
+
+            @media all and (max-width: 1024px) {
+                section {
+                    overflow: visible;
+                }
             }
         </style>
 

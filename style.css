@@ -7,7 +7,8 @@ body {
 #page {
 	font-family: paragraphe_font;
 	font-size: 1;
-
+	
+	width: auto;
 	height: 100vh;
 	display: grid;
 	grid-template-rows: 18% auto 6%;
@@ -120,6 +121,10 @@ footer {
 	align-items: center;
 }
 
+
+
+#bouton_propos:hover {
+	background-color: rgba(200, 200, 200, 0.9);
 }
 
 aside p {
@@ -134,18 +139,48 @@ input, textarea {
 	margin: 5px;
 }
 
-/*
-#image_moi {
-	max-width: 25vh;
-	max-height: 25vh;
+@media all and (max-width: 1024px) 
+{
+	#page {
+		height: auto;
+		grid-template-rows: 18% auto auto 6%;
+		grid-template-columns: auto 35%;
 
+		grid-template-areas: "header header"
+							 "section section"
+							 "aside aside"
+						 	"footer footer"
+	}
+
+	section {
+		overflow-y: visible;
+		border-bottom: 4px black solid;
+	}
+
+	aside {
+		overflow-y: visible;
+		border: none;
+	}
+	header {
+		grid-template-rows: 50% 50%;
+		grid-template-columns: auto;
+
+	}
+	nav {
+		border-left:none;
+		border-top: 4px black solid;
+	}
+	body {
+		overflow-x: hidden;
+	}
+
+	#moi_figure {
+		display: none;
+	}
 }
 
-#bouton_propos {
-	background-color: rgba(255, 255, 255, 0.9);
-	border: 4px black solid;
-	padding: 5px;
+@media all and (max-height: 520px){
+	#moi_figure {
+		display: none;
+	}
 }
-
-#bouton_propos:hover {
-	background-color: rgba(200, 200, 200, 0.9);
