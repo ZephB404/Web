@@ -222,18 +222,20 @@ input, textarea {
 }
 
 @media all and (min-height: 1080px){
-	#page {
-		font-size: 1.5em;
+	@media (orientation: landscape) {
+		#page {
+			font-size: 1.5em;
+		}
+		input {
+				height: 2em;
+				width: 60%;
+			}
+			input, textarea {
+				font-size: 1em;
+			}
+			textarea {
+				height: 14em;
+				width: 80%;
+			}
 	}
-	input {
-			height: 2em;
-			width: 60%;
-		}
-		input, textarea {
-			font-size: 1em;
-		}
-		textarea {
-			height: 14em;
-			width: 80%;
-		}
 }
