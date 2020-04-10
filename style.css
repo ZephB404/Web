@@ -10,7 +10,7 @@ body {
 
 	height: 100vh;
 	display: grid;
-	grid-template-rows: 18% auto 6vh;
+	grid-template-rows: 18% auto 6%;
 	grid-template-columns: auto 35%;
 
 	grid-template-areas: "header header"
@@ -43,7 +43,6 @@ header {
 	display: grid;
 	grid-template-rows: 18vh;
 	grid-template-columns: auto 35%;
-	border-top: 4px black solid;
 
 
 }
@@ -97,32 +96,30 @@ footer {
 }
 
 #moi_figure {
-	height: 25vh;
-	width: 25vh;
+	height: 24vh;
+	width: 24vh;
 	position: relative;
-}
-
-#image_moi {
-	max-width: 100%;
-	max-height: 100%;
+	display: grid;
+	grid-template-rows: 1fr;
+	background: url("images/avatar_mini.jpg");
+	background-size: 24vh 24vh;
 }
 
 #bouton_propos {
-	background-color: rgba(255, 255, 255, 0.9);
-	border: 4px black solid;
 	position: absolute;
-	bottom: 0px;
+	bottom:0px;
 	right: 0px;
-	padding: 5px;
+	width: 30%;
+	height: 15%;
+	border: 0.5vh black solid;
+	background-color: rgba(255, 255, 255, 0.9);
+	padding: 1vh;
 
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 2em;
 }
 
-#bouton_propos:hover {
-	background-color: rgba(200, 200, 200, 0.9);
 }
 
 aside p {
@@ -136,3 +133,19 @@ aside p {
 input, textarea {
 	margin: 5px;
 }
+
+/*
+#image_moi {
+	max-width: 25vh;
+	max-height: 25vh;
+
+}
+
+#bouton_propos {
+	background-color: rgba(255, 255, 255, 0.9);
+	border: 4px black solid;
+	padding: 5px;
+}
+
+#bouton_propos:hover {
+	background-color: rgba(200, 200, 200, 0.9);

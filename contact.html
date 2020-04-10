@@ -8,21 +8,16 @@
         <link rel="stylesheet" href="font.css">
         <style>
             section {
+                overflow: hidden;
                 display: flex;
-                flex-wrap: wrap;
-                overflow-y: auto;
-            }
-            #social_media {
-                width: 100%;
-                display: flex;
+                flex-direction: column;
                 justify-content: space-around;
-                align-items: flex-start;
             }
-            
-            .icon {
-                max-height: 35%;
-                max-width: 35%;
+
+            section > * {
+                text-align: center;
             }
+
             textarea {
                 resize: none;
             }
@@ -31,8 +26,8 @@
                 width: 100%;
             }
             .formulaire {
-                width: 400px;
-                height: 92%; 
+                width: 0%;
+                margin:auto;
             }
         </style>
 
@@ -59,48 +54,37 @@
 
     		<section>
     			<h1 class="titre_contact">Contactez moi!</h1>
-    			<p class="adresse">Adresse courriel: <a href="mailto:zephyr.bielinski@gmail.com">zephyr.bielinski@gmail.com</a></p>
+
+    			<p> Adresse courriel: <a href="mailto:zephyr.bielinski@gmail.com">zephyr.bielinski@gmail.com</a></p>
                 
-                <form name="contact" netlify action="/succes.html">
                     <fieldset class="formulaire">
                         <legend> Me contacter directement</legend>
-                        <p>
-                            <input type="email" name="mail_envoyeur" id="mail_envoyeur" required>
-                            <label for="mail_envoyeur">Votre courriel</label>
-                            <br />
-                            <input type="text" name="objet" id="objet" required>
-                            <label for="objet">Objet</label>
-                            <br />
-                            <textarea rows="10" cols="80"></textarea>
-                        </p>
+
+                        <form name="contact" netlify action="/succes.html">
+                            <p>
+                                <input type="email" name="mail_envoyeur" id="mail_envoyeur" required>
+                                <label for="mail_envoyeur">Votre courriel</label>
+                                <br />
+                                <input type="text" name="objet" id="objet" required>
+                                <label for="objet">Objet</label>
+                                <br />
+                                <textarea rows="10" cols="50%"></textarea>
+                            </p>
                         <input type="submit" name="envoyer">
+                        </form>
                     </fieldset>
-                </form>
-                <div id="social_media">
-                    <div>
-                        <a href="https://www.facebook.com/people/Zéphyr-Bielinski/100011818264176">
-                            <img src="images/facebook.png" class="icon" alt="facebook logo">
-                         </a>
-                    </div>
-                    <div>
-                        <a href="https://www.instagram.com/zeph_le_zeph/">
-                            <img src="images/instagram.png" class="icon" alt="Instagram logo">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="https://www.youtube.com/channel/UCMcxtVQ3fSGNyOJ2wz1eR1w">
-                            <img src="images/youtube.png" class="icon" alt="YouTube logo">
-                        </a>
-                    </div>
-                </div>
+
     		</section>
 
     		<aside>
     			<h3>À propos de moi</h3>
     			<figure id="moi_figure">
-    				<img src="images/avatar_mini.jpg" id="image_moi" alt="Carricature Zéphyr Bielinski">
-    				<div id="bouton_propos"><a href="#" id="contact_text">Contact</a></div>
-    			</figure>
+                    <div id="bouton_propos">
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </div>
+                </figure>
     				<p>Qui suis-je? Question terrorisante pour certains ou gratifiante pour d'autres je tenterai d'y répondre ici à ma manière. Je suis un jeune québécois qui essaye jour après jour de regarder le monde qui l'entoure d'un oeil critique. Je ne me satisfait jamais de réponses faciles ou bien trop évidentes et je dois avouer mon faible pour les pensées qui dérangent. Je n'aime pas que ma parole soit trop convenue et qu'elle s'explique simplement par son contexte. J'essaye de lui apporter une valeur additionnelle! Alors oui, j'ai seulement 16 ans et cet âge m'apporte le grand incovénient de manquer d'expérience et de vécu, mais je crois que cette jeunesse qui m'habite peut aussi m'apporter un regard nouveau. C'est en ce sens que j'espère ce blog pertinent. À la revoyure! </p>
     		</aside>
 
