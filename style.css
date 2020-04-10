@@ -184,3 +184,12 @@ input, textarea {
 		display: none;
 	}
 }
+
+@media (orientation: portrait){
+	header, footer {
+		font-size: 2.5em;
+	}
+	nav {
+		font-size: 2em;
+	}
+}
