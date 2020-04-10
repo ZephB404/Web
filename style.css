@@ -185,7 +185,7 @@ input, textarea {
 	}
 }
 
-@media (max-device-width: 480){
+@media all and (max-device-width: 480px){
 	header, footer {
 		font-size: 2.5em;
 	}
