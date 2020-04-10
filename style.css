@@ -185,7 +185,7 @@ input, textarea {
 	}
 }
 
-@media (orientation: portrait){
+@media (max-device-width: 480){
 	header, footer {
 		font-size: 2.5em;
 	}

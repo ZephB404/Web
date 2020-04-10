@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="font.css">
         <style>
             section {
-                overflow-x: hidden;
+                overflow: hidden;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
@@ -30,33 +30,40 @@
                 margin:auto;
             }
 
-            @media all and (max-width: 1024px) {
+ @media (max-device-width: 480) {
                 section {
-                    overflow: visible;
-                }
-            }
-            @media (orientation: portrait){
-                section {
-                    font-size: 3em;
+                    font-size: 2em;
                 }
                 .formulaire {
-                    width: 100%;
+                    width: 80%;
                     height: auto;
                 }
                 input {
                     border: 2px black solid;
                     height: 200px;
                     margin: 20px;
+                    margin-right: 0px;
                     width: 60%;
-                    font-size: 2em;
+                    font-size: 1em;
                 }
                 textarea {
                     border: 2px black solid;
                     margin: 20px;
                     width:80%;
                     height: 400px;
+                    font-size: 1em;
                 }
+                #submit {
+                    margin:0px;
+                    position: relative;
+                    top: -50px;
+                    margin: auto;
+                    height: 100px;
+                    padding-bottom: 20px;
+                }
+
             }
+        
         </style>
 
     </head>
@@ -96,9 +103,9 @@
                                 <input type="text" name="objet" id="objet" required>
                                 <label for="objet">Objet</label>
                                 <br />
-                                <textarea rows="10" cols="50%"></textarea>
+                                <textarea rows="10" cols="50%" placeholder="Votre message..."></textarea>
                             </p>
-                        <input type="submit" name="envoyer">
+                        <input type="submit" name="envoyer" id="submit">
                         </form>
                     </fieldset>
 
