@@ -142,9 +142,10 @@ input, textarea {
 @media all and (max-width: 1024px) 
 {
 	#page {
+		min-height: 100vh;
 		height: auto;
-		grid-template-rows: 18% auto auto 6%;
-		grid-template-columns: auto;
+		grid-template-rows: 18vh auto auto 6vh;
+		grid-template-columns: 100%;
 
 		grid-template-areas: "header"
 							 "section"
@@ -172,6 +173,7 @@ input, textarea {
 	}
 	body {
 		overflow-x: hidden;
+		overflow-y: scroll;
 	}
 
 	#moi_figure {
@@ -191,5 +193,29 @@ input, textarea {
 	}
 	nav {
 		font-size: 2em;
+	}
+	#page {
+		grid-template-rows: 25vh auto auto 6vh;
+	}
+	@media (orientation: portrait) {
+		#section_contact {
+			font-size: 2.5em;
+		}
+		input {
+			height: 10em;
+			width: 60%;
+		}
+		input, textarea {
+			border: 2px black solid;
+			font-size: 1em;
+		}
+		textarea {
+			height: 15em;
+			width: 100%;
+		}
+		#submit {
+			height: 4em;
+
+		}
 	}
 }
