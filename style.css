@@ -144,12 +144,12 @@ input, textarea {
 	#page {
 		height: auto;
 		grid-template-rows: 18% auto auto 6%;
-		grid-template-columns: auto 35%;
+		grid-template-columns: auto;
 
-		grid-template-areas: "header header"
-							 "section section"
-							 "aside aside"
-						 	"footer footer"
+		grid-template-areas: "header"
+							 "section"
+							 "aside"
+						 	"footer"
 	}
 
 	section {
